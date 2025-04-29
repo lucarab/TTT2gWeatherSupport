@@ -148,9 +148,15 @@ if SERVER then
 		ttt2_current_weather = nil
 		-- random chance for weather
 		local randomChance = math.random(1, 100)
-		if randomChance < GetConVar( "ttt2_cv_gweather_chance" ):GetInt() then return end
-		-- if we won the random roll, add a weather
-		ttt2_gWeather_addRandomWeather()
+		if randomChance < (GetConVar( "ttt2_cv_gweather_chance" ):GetFloat() * 100) then
+			-- if we won the random roll, add a weather
+			ttt2_gWeather_addRandomWeather()
+		else
+			-- inform clients
+			net.Start( "ttt2_tell_about_weather" )
+			net.WriteString( "Map Standard" )
+			net.Broadcast()
+		end
 	end )
 
 	hook.Add( "TTTEndRound", "TTT2_END_GWEATHER", function()

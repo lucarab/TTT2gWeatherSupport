@@ -8,11 +8,11 @@ function CLGAMEMODESUBMENU:Populate(parent)
         label = "ttt2_gweather_help1",
     })
 	form:MakeCheckBox({
-        label = "Enable Weather Damage to Entities (Players/NPCs)",
+        label = "ttt2_gweather_label_entitydamage",
         serverConvar = "gw_weather_entitydamage",
     })
 	form:MakeSlider({
-        label = "How long should the weather last for in seconds",
+        label = "ttt2_gweather_label_weathertime",
         serverConvar = "gw_weather_lifetime",
         min = 0,
         max = 2000,
@@ -23,15 +23,15 @@ function CLGAMEMODESUBMENU:Populate(parent)
         label = "ttt2_gweather_help2",
     })
 	form:MakeCheckBox({
-        label = "Enable custom player gWeather wind physics",
+        label = "ttt2_gweather_label_windeffectsplayers",
         serverConvar = "gw_windphysics_player",
     })
 	form:MakeCheckBox({
-        label = "Enable custom prop gWeather wind physics",
+        label = "ttt2_gweather_label_windeffectsprops",
         serverConvar = "gw_windphysics_prop",
     })
 	form:MakeSlider({
-        label = "How often does wind push stuff",
+        label = "ttt2_gweather_label_windeffecttime",
         serverConvar = "gw_nextwind",
         min = 0.1,
         max = 2,
@@ -42,7 +42,7 @@ function CLGAMEMODESUBMENU:Populate(parent)
         label = "ttt2_gweather_help3",
     })
 	local temperatureEffectsPlayers = form:MakeCheckBox({
-        label = "Should the player experience hypo/hyperthermia from the weather",
+        label = "ttt2_gweather_label_temperatureeffects",
         serverConvar = "gw_tempaffect",
     })
 	
@@ -51,14 +51,14 @@ function CLGAMEMODESUBMENU:Populate(parent)
         label = "ttt2_gweather_help4",
     })
 	form2:MakeSlider({
-        label = "Percent of rounds that have weather enabled",
+        label = "ttt2_gweather_label_weatherchance",
         serverConvar = "ttt2_cv_gweather_chance",
         min = 0,
         max = 1,
         decimal = 2,
     })
 	form2:MakeSlider({
-        label = "Maximum tier of weather enabled. Higher = crazier",
+        label = "ttt2_gweather_label_weathertiers",
         serverConvar = "ttt2_cv_gweather_max_tier",
         min = 1,
         max = 6,
@@ -69,7 +69,7 @@ end
 function CLGAMEMODESUBMENU:PopulateButtonPanel(parent)
 	-- Delete weather
     local buttonDeleteWeather = vgui.Create("DButtonTTT2", parent)
-    buttonDeleteWeather:SetText("Delete Current Weather")
+    buttonDeleteWeather:SetText("ttt2_gweather_button_delete")
     buttonDeleteWeather:SetSize(300, 45)
     buttonDeleteWeather:SetPos(20, 20)
     buttonDeleteWeather.DoClick = function(btn)
@@ -79,7 +79,7 @@ function CLGAMEMODESUBMENU:PopulateButtonPanel(parent)
 	
 	-- Add random weather
     local buttonAddRandomWeather = vgui.Create("DButtonTTT2", parent)
-    buttonAddRandomWeather:SetText("Add Random Weather")
+    buttonAddRandomWeather:SetText("ttt2_gweather_button_add")
     buttonAddRandomWeather:SetSize(300, 45)
     buttonAddRandomWeather:SetPos(340, 20)
     buttonAddRandomWeather.DoClick = function(btn)

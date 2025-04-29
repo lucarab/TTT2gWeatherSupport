@@ -12,3 +12,17 @@ L["ttt2_gweather_help1"] = "General Settings"
 L["ttt2_gweather_help2"] = "Wind Settings"
 L["ttt2_gweather_help3"] = "Temperature Settings"
 L["ttt2_gweather_help4"] = "TTT2 Compatibility Settings"
+
+-- label labels
+L["ttt2_gweather_label_entitydamage"] = "Enable Weather Damage to Entities (Players/NPCs)"
+L["ttt2_gweather_label_weathertime"] = "How long should the weather last for in seconds"
+L["ttt2_gweather_label_windeffectsplayers"] = "Enable custom player gWeather wind physics"
+L["ttt2_gweather_label_windeffectsprops"] = "Enable custom prop gWeather wind physics"
+L["ttt2_gweather_label_windeffecttime"] = "How often does wind push stuff"
+L["ttt2_gweather_label_temperatureeffects"] = "Should the player experience hypo/hyperthermia from the weather"
+L["ttt2_gweather_label_weatherchance"] = "Percent of rounds that have weather enabled"
+L["ttt2_gweather_label_weathertiers"] = "Maximum tier of weather enabled. Higher = crazier"
+
+-- button labels
+L["ttt2_gweather_button_delete"] = "Delete Current Weather"
+L["ttt2_gweather_button_add"] = "Add Random Weather"
