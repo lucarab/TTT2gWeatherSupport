@@ -36,6 +36,10 @@ L["ttt2_gweather_weathervolume_label"] = "Weather Volume"
 L["ttt2_gweather_hud_help"] = "HUD Settings"
 L["ttt2_gweather_enablehud_label"] = "Enable Weather HUD"
 
+-- particle labels
+L["ttt2_gweather_particle_help"] = "Particle Settings"
+L["ttt2_gweather_particlelevel_label"] = "Particle Detail Level"
+
 -- button labels
 L["ttt2_gweather_button_delete"] = "Delete Current Weather"
 L["ttt2_gweather_button_add"] = "Add Random Weather"

@@ -36,6 +36,10 @@ L["ttt2_gweather_weathervolume_label"] = "Wetterlautstärke"
 L["ttt2_gweather_hud_help"] = "HUD Einstellungen"
 L["ttt2_gweather_enablehud_label"] = "Wetter-HUD aktivieren"
 
+-- particle labels
+L["ttt2_gweather_particle_help"] = "Partikeleinstellungen"
+L["ttt2_gweather_particlelevel_label"] = "Partikel-Detailstufe"
+
 -- button labels
 L["ttt2_gweather_button_delete"] = "Aktuelles Wetter entfernen"
 L["ttt2_gweather_button_add"] = "Zufälliges Wetter hinzufügen"

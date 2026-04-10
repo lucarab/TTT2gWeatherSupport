@@ -25,3 +25,7 @@ L["ttt2_gweather_weathervolume_label"] = "Hava Durumu Ses Seviyesi"
 -- hud labels
 L["ttt2_gweather_hud_help"] = "HUD Ayarları"
 L["ttt2_gweather_enablehud_label"] = "Hava Durumu HUD'unu Etkinleştir"
+
+-- particle labels
+L["ttt2_gweather_particle_help"] = "Parçacık Ayarları"
+L["ttt2_gweather_particlelevel_label"] = "Parçacık Detay Seviyesi"
